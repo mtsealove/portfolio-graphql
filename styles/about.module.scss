@@ -1,0 +1,56 @@
+.item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: .75rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .16);
+  display: flex;
+  align-items: flex-start;
+
+  &Icon {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 1rem;
+  }
+
+  &LV {
+    display: flex;
+    flex-direction: column;
+  }
+  &Label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #191919;
+    opacity: .5;
+  }
+  &Value {
+    opacity: .45;
+    font-size: 1rem;
+    margin-top: .5rem;
+  }
+}
+
+.wrapper {
+  background-color: #F1F1F5;
+  padding: 6rem 0 4rem;
+  display: flex;
+}
+
+.container {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+    width: calc(100vw - 48px);
+  }
+}
+
+
